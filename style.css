@@ -1,0 +1,30 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+  }
+  
+  .card {
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Carrusel personalizado */
+  .carousel-custom {
+    height: 400px; /* Cambia este valor para ajustar la altura */
+    margin-top: 0;
+  }
+  
+  .carousel-img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .caption-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 600px; /* puedes ajustar esto según lo ancho que lo quieras */
+    margin: 0 auto; /* centra el texto horizontalmente */
+  }
