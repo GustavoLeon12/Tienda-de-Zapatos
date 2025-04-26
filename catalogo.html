@@ -27,6 +27,8 @@
                 <p>Zapato Casual Negro 1CYV004</p>
                 <span class="precio">S/. 120.00</span>
                 <button class="btn-comprar" onclick="agregarAlCarrito('Zapato Casual Negro 1CYV004')">Comprar</button>
+                <button onclick="mostrarDetalles('Zapato Casual Negro 1CYV004')">Ver detalles</button>
+
             </div>
     
             <div class="producto">
@@ -35,6 +37,8 @@
                 <p>Zapato Casual Cogñac 1CD6001</p>
                 <span class="precio">S/. 135.00</span>
                 <button class="btn-comprar" onclick="agregarAlCarrito('Zapato Casual Cogñac 1CD6001')">Comprar</button>
+                <button onclick="mostrarDetalles('Zapato Casual Negro 1CYV004')">Ver detalles</button>
+
             </div>
     
             <div class="producto">
@@ -43,6 +47,8 @@
                 <p>Zapato Casual Canela 1CTI001</p>
                 <span class="precio">S/. 145.00</span>
                 <button class="btn-comprar" onclick="agregarAlCarrito('Zapato Casual Canela 1CTI001')">Comprar</button>
+                <button onclick="mostrarDetalles('Zapato Casual Negro 1CYV004')">Ver detalles</button>
+
             </div>
     
             <div class="producto">
@@ -51,6 +57,8 @@
                 <p>Zapato De Vestir Negro 1VHV001</p>
                 <span class="precio">S/. 125.00</span>
                 <button class="btn-comprar" onclick="agregarAlCarrito('Zapato De Vestir Negro')">Comprar</button>
+                <button onclick="mostrarDetalles('Zapato Casual Negro 1CYV004')">Ver detalles</button>
+
             </div>
 
             <div class="producto">
@@ -59,6 +67,7 @@
                 <p>Zapatillas Urbanas Adidas Hombres Jh7235 Grand Court Alpha 00S</p>
                 <span class="precio">S/. 130.00</span>
                 <button class="btn-comprar" onclick="agregarAlCarrito('Zapato Urbanas Adidas')">Comprar</button>
+                <button onclick="mostrarDetalles('Zapato Casual Negro 1CYV004')">Ver detalles</button>
             </div>
 
             <div class="producto">
@@ -67,6 +76,7 @@
                 <p>Zapatillas Deportivas Adidas Mujeres Id3464 Terrex Anylander W</p>
                 <span class="precio">S/. 185.00</span>
                 <button class="btn-comprar" onclick="agregarAlCarrito('Zapatillas Deportivas Adidas')">Comprar</button>
+                <button onclick="mostrarDetalles('Zapato Casual Negro 1CYV004')">Ver detalles</button>
             </div>
 
             <div class="producto">
@@ -75,6 +85,7 @@
                 <p>Zapatillas Urbanas Adidas Infante Ih1047 Tensaur Run 3 El I</p>
                 <span class="precio">S/. 145.00</span>
                 <button class="btn-comprar" onclick="agregarAlCarrito('Zapatillas Urbanas Adidas')">Comprar</button>
+                <button onclick="mostrarDetalles('Zapato Casual Negro 1CYV004')">Ver detalles</button>
             </div>
 
             <div class="producto">
@@ -83,6 +94,7 @@
                 <p>Zapatillas Urbanas Adidas Mujeres Ji4866 Breaknet 2</p>
                 <span class="precio">S/. 230.00</span>
                 <button class="btn-comprar" onclick="agregarAlCarrito('Zapatillas Urbanas Adidas')">Comprar</button>
+                <button onclick="mostrarDetalles('Zapato Casual Negro 1CYV004')">Ver detalles</button>
             </div>
 
             <div class="producto">
@@ -91,6 +103,7 @@
                 <p>Botines Casuales Footloose Mujeres Ftl-Jn00033</p>
                 <span class="precio">S/. 179.90</span>
                 <button class="btn-comprar" onclick="agregarAlCarrito('Botines Casuales Footloose')">Comprar</button>
+                <button onclick="mostrarDetalles('Zapato Casual Negro 1CYV004')">Ver detalles</button>
             </div>
 
             <div class="producto">
@@ -99,6 +112,7 @@
                 <p>Botines Casuales Footloose Mujeres Ftl-Rs00058</p>
                 <span class="precio">S/. 199.90</span>
                 <button class="btn-comprar" onclick="agregarAlCarrito('Botines Casuales Footloose')">Comprar</button>
+                <button onclick="mostrarDetalles('Zapato Casual Negro 1CYV004')">Ver detalles</button>
             </div>
 
             <div class="producto">
@@ -107,6 +121,7 @@
                 <p>Botines Casuales Footloose Mujeres Ftl-Yq00014</p>
                 <span class="precio">S/. 189.90</span>
                 <button class="btn-comprar" onclick="agregarAlCarrito('Botines Casuales Footloose')">Comprar</button>
+                <button onclick="mostrarDetalles('Zapato Casual Negro 1CYV004')">Ver detalles</button>
             </div>
 
             <div class="producto">
@@ -115,8 +130,10 @@
                 <p>Botines Casuales Footloose Mujeres Ftl-Yq00015</p>
                 <span class="precio">S/. 219.90</span>
                 <button class="btn-comprar" onclick="agregarAlCarrito('Botines Casuales Footloose')">Comprar</button>
+                <button onclick="mostrarDetalles('Zapato Casual Negro 1CYV004')">Ver detalles</button>
             </div>
         </div>
+        <div class="row" id="product-list"></div>
     </main>
 
     <!-- Inicio del encabezado inferior -->
@@ -194,6 +211,14 @@
             </div>
         </div>
     </footer>
+
+    <div id="modal-detalle" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="cerrarModal()">&times;</span>
+            <h3 id="titulo-detalle"></h3>
+            <p id="descripcion-detalle"></p>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
