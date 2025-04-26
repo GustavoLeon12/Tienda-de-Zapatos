@@ -40,3 +40,27 @@ const productos = [
     alert(`Has agregado "${nombre}" al carrito.`);
   }
   
+  const detallesZapatos = {
+    'Zapato Casual Negro 1CYV004': 'Zapato casual ideal para uso diario, suela antideslizante y material sintético.',
+    'Zapato Casual Cogñac 1CD6001': 'Diseño elegante en color coñac, perfecto para reuniones informales.',
+    'Zapato Casual Canela 1CTI001': 'Acabado en canela con costuras reforzadas, excelente durabilidad.',
+    'Zapato De Vestir Negro': 'Clásico zapato de vestir, perfecto para eventos formales.',
+    'Zapato Urbanas Adidas': 'Zapatillas urbanas cómodas y modernas con tecnología Cloudfoam.',
+    'Zapatillas Deportivas Adidas': 'Diseñadas para entrenamiento, suela resistente y gran amortiguación.',
+    'Zapatillas Urbanas Adidas': 'Para uso diario, ligeras y con diseño moderno.',
+    'Botines Casuales Footloose': 'Botines con forro interior acolchado, ideales para el invierno.',
+};
+
+function mostrarDetalles(nombreProducto) {
+    const modal = document.getElementById("modal-detalle");
+    const titulo = document.getElementById("titulo-detalle");
+    const descripcion = document.getElementById("descripcion-detalle");
+
+    titulo.innerText = nombreProducto;
+    descripcion.innerText = detallesZapatos[nombreProducto] || 'Detalles no disponibles.';
+    modal.style.display = "block";
+}
+
+function cerrarModal() {
+    document.getElementById("modal-detalle").style.display = "none";
+}
